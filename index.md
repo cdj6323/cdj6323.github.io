@@ -521,6 +521,7 @@ yay --version                                           # verify yay is installe
 5. **Problem:** the hostname is missing from my prompt line
 
    **Fix:** My file has - PROMPT='%F{green}%n%f@%F %F{blue}%~%f %# '
+   
       It Should be - PROMPT='%F{green}%n%f@%F{cyan}%m%f %F{blue}%~%f %# '
       ```
       nano ~/.zshrc     # fix the PROMPT line
