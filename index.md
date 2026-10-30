@@ -186,6 +186,7 @@ What this installs:
 | `sudo`                 | Needed for the "sudo permissions" requirement                                       |
 | `man-db`               | The man command for reading manual pages                                            |
 | `man-pages`            | The manual pages themselves                                                         |
+
 ![](Attachments/Pasted%20image%2020261030110633.png)
 
 ## 3. Configure the System
