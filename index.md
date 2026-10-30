@@ -504,19 +504,19 @@ yay --version                                           # verify yay is installe
 
    **Fix:** Typed poweroff in the vm and hit enter.
 
-2. **Problem:** Couldn't type in the archboot console.
+2. **Question:** Why couldn't I type in the archboot console.
 
-   **Fix:** In the GRUB menu, press 'e' on "Launch UEFI Archboot", add `video=efifb:off` after `systemd.show_status=false`, then press Ctrl+X.
+   **Answer/fix:** In the GRUB menu, press 'e' on "Launch UEFI Archboot", add `video=efifb:off` after `systemd.show_status=false`, then press Ctrl+X.
 
 3. **Problem:** I accidentally deleted the ISO file in my downloads folder so it wouldn't boot my VM.
 
    **Fix:** Restored the file from my trash bin.
 
-4. **Problem:** In 3.4, running `nano /etc/locale.gen` inside the chroot failed with `ncurses: cannot initialize terminal type ($TERM="kmscon"); exiting`.
+4. **Question:** In 3.4, why did running `nano /etc/locale.gen` inside the chroot fail with `ncurses: cannot initialize terminal type ($TERM="kmscon"); exiting`.
 
    **Cause:** Archboot's console runs a program called kmscon, which sets the terminal type to `TERM=kmscon`. The new Arch system I chrooted into doesn't have a definition for that terminal type, so nano didn't know how to draw its screen.
 
-   **Fix:** Ran `export TERM=linux` to switch to the standard Linux console terminal type, then reopened nano. 
+   **Answer:** Ran `export TERM=linux` to switch to the standard Linux console terminal type, then reopened nano. 
 
 5. **Problem:** the hostname is missing from my prompt line
 
